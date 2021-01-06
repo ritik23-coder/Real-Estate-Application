@@ -1,4 +1,4 @@
-# happynest
+# real estate
 Android application to search and rent the housing options.
 The project contains the login authentication using firebase as back end 
 Firebase also stores the entire data in JSON format and is synced to the application
