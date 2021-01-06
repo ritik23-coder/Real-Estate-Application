@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "30.0.2"
+    defaultConfig {
+        applicationId "com.SyracuseUniversity.jashwanthreddy.happynest"
+        minSdkVersion 20
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //   compile 'com.squareup.picasso:picasso:2.5.2'
+    
+
+    /* *swipestack */
+    
+    //Image Upload
+    
+implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'de.hdodenhof:circleimageview:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.firebaseui:firebase-ui:1.2.0'
+    //implementation 'com.google.android.gms:play-services:10.2.1'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-database:19.5.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'link.fls:swipestack:0.3.0'
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.3.4'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+    implementation 'com.cloudinary:cloudinary-core:1.2.2'
+    implementation 'com.cloudinary:cloudinary-android:1.2.2'
+    //wasabeef animaotors
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.0'
+    testImplementation 'junit:junit:4.12'
+
+    //Advanced animations
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation 'com.labo.kaji:fragmentanimations:0.1.1'
+    implementation 'com.alimuzaffar.lib:animated-edit-text:1.1'
+    implementation 'androidx.transition:transition:1.0.0'
+}
+
+
+repositories {
+    maven { url "https://jitpack.io" }
+    jcenter { url "http://jcenter.bintray.com/" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'

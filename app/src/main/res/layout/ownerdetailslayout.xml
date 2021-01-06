@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:id="@+id/owner_details_fragment_layout">
+
+
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/project_name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/owner_contact_info"
+        android:layout_alignStart="@+id/owner_contact_info"
+        android:layout_below="@+id/owner_contact_info"
+        android:hint="Project Name"
+        android:layout_marginTop="18dp" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/owner_contact_info"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Mobile"
+        android:imeOptions="actionNext"
+        android:layout_alignLeft="@+id/ownermailid"
+        android:layout_alignStart="@+id/ownermailid"
+        android:layout_below="@+id/ownermailid"
+        android:layout_marginTop="13dp" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/owner_name"
+        android:layout_width="200dp"
+        android:hint="Name"
+        android:imeOptions="actionNext"
+        android:textColorHighlight="@color/colorPrimary"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="70dp" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/ownermailid"
+        android:layout_width="200dp"
+        android:hint="Mail Id"
+        android:imeOptions="actionNext"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/owner_name"
+        android:layout_alignStart="@+id/owner_name"
+        android:layout_below="@+id/owner_name"
+        android:layout_marginTop="13dp" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/AddressLine1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Address Line1"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/project_name"
+        android:layout_alignLeft="@+id/project_name"
+        android:layout_alignStart="@+id/project_name" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/AddressLine2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Address Line2"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/AddressLine1"
+        android:layout_alignLeft="@+id/AddressLine1"
+        android:layout_alignStart="@+id/AddressLine1" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/ownercity"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="City"
+        android:textColorHighlight="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/AddressLine2"
+        android:layout_alignLeft="@+id/AddressLine2"
+        android:layout_alignStart="@+id/AddressLine2" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/owner_details_continue_button"/>
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>

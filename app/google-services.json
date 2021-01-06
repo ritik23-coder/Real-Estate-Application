@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "536332341461",
+    "firebase_url": "https://happynest-57d8c.firebaseio.com",
+    "project_id": "happynest-57d8c",
+    "storage_bucket": "happynest-57d8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536332341461:android:9f489cfe427a0c37",
+        "android_client_info": {
+          "package_name": "com.example.jashwanthreddy.happynest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536332341461-8lfq43hhtv726chlm8emuoekd9ip3nef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jashwanthreddy.happynest",
+            "certificate_hash": "b67be54450d1c68b4168794c0f413f77f746b4ad"
+          }
+        },
+        {
+          "client_id": "536332341461-egrkq5999k6s9r303sq03idkb2fckq3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUv-gBzHs8pveRFFDrt4PlG_qpBX6n48s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536332341461-egrkq5999k6s9r303sq03idkb2fckq3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536332341461:android:b534022adf3bf441",
+        "android_client_info": {
+          "package_name": "com.SyracuseUniversity.jashwanthreddy.happynest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536332341461-egrkq5999k6s9r303sq03idkb2fckq3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUv-gBzHs8pveRFFDrt4PlG_qpBX6n48s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycle_fragment_menu"
+    tools:context="com.SyracuseUniversity.jashwanthreddy.assignment5.task2">
+   <item
+        android:id="@+id/recycle_toolbar_imageview"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"
+        android:icon="@drawable/dpsumanth"
+        android:title="image_recycleview_toolbar">
+    </item>
+    <item
+        android:id="@+id/recycleview_toolbar_title"
+        app:showAsAction="always"
+        android:title="HousingList"
+        android:orderInCategory="100">
+    </item>
+</menu>

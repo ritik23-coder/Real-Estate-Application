@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:id="@+id/requirement_fragment_layout">
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/locationtolive"
+        android:hint="Where do you want to live?"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/numberofbedroomsspinner1"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/bedrroomnuber"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:text="Number Of Bedrooms"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/locationtolive"
+        android:layout_alignLeft="@+id/locationtolive"
+        android:layout_alignStart="@+id/locationtolive" />
+    <Spinner
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/numberofbedroomsspinner1"
+        android:layout_alignTop="@+id/bedrroomnuber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"></Spinner>
+
+    <TextView
+        android:id="@+id/propertybudget"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/bedrroomnuber"
+        android:layout_alignStart="@+id/bedrroomnuber"
+        android:layout_below="@+id/bedrroomnuber"
+        android:layout_marginTop="19dp"
+        android:text="Budget"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:hint="Min"
+        android:textSize="20dp"
+        android:layout_below="@+id/propertybudget"
+        android:id="@+id/minbudget"
+        android:layout_alignLeft="@+id/propertybudget"
+        android:layout_alignStart="@+id/propertybudget"
+        android:layout_marginTop="25dp" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:hint="Max"
+        android:textSize="20dp"
+        android:id="@+id/maxbudget"
+        android:layout_alignBaseline="@+id/minbudget"
+        android:layout_alignBottom="@+id/minbudget"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+
+    <CheckBox
+        android:id="@+id/securitycheckbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/minbudget"
+        android:layout_alignLeft="@+id/minbudget"
+        android:layout_alignStart="@+id/minbudget" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/furnishmentchechbox1"
+        android:layout_below="@+id/securitycheckbox1"
+        android:layout_alignLeft="@+id/securitycheckbox1"
+        android:layout_alignStart="@+id/securitycheckbox1" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internetcheckbox1"
+        android:layout_below="@+id/furnishmentchechbox1"
+        android:layout_alignLeft="@+id/furnishmentchechbox1"
+        android:layout_alignStart="@+id/furnishmentchechbox1" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recreationcheckbox1"
+        android:layout_below="@+id/internetcheckbox1"
+        android:layout_alignLeft="@+id/internetcheckbox1"
+        android:layout_alignStart="@+id/internetcheckbox1" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parkingcheckbox1"
+        android:layout_below="@+id/recreationcheckbox1"
+        android:layout_alignLeft="@+id/recreationcheckbox1"
+        android:layout_alignStart="@+id/recreationcheckbox1" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/securityhead"
+        android:text="Security"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/furnishmentchechbox1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="Furnishment"
+        android:textSize="20dp"
+        android:id="@+id/furnishmenthead"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/securityhead"
+        android:layout_alignLeft="@+id/securityhead"
+        android:layout_alignStart="@+id/securityhead" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/Internethead"
+        android:text="Internet"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/furnishmenthead"
+        android:layout_alignLeft="@+id/furnishmenthead"
+        android:layout_alignStart="@+id/furnishmenthead" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/recreationhead"
+        android:text="Recreation Services"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/parkinghead"
+        android:layout_alignLeft="@+id/parkinghead"
+        android:layout_alignStart="@+id/parkinghead" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/parkinghead"
+        android:text="Parking"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_alignBottom="@+id/parkingcheckbox1"
+        android:layout_alignLeft="@+id/Internethead"
+        android:layout_alignStart="@+id/Internethead" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Search"
+
+
+        android:id="@+id/searchbutton"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

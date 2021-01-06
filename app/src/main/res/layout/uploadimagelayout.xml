@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:id="@+id/upload_picture_fragment_layout">
+
+    <TextView
+        android:id="@+id/uploadimagehead"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Upload Pictures of Your Property"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:src="@drawable/imageupload"
+        android:id="@+id/browseCameraOrGallery"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/uploadimagehead"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:id="@+id/uploadedimage"
+        android:layout_below="@+id/browseCameraOrGallery"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Post"
+        android:id="@+id/finalpostbuton"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/uploadedimage"
+        android:layout_alignStart="@+id/browseCameraOrGallery"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Happy Nest"
+        android:id="@+id/createAccount"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/Differentlogin" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First time users,click on Create User"
+        android:id="@+id/createAccount1"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/createAccount"
+        android:layout_centerHorizontal="true" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="Enter your password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:textColor="#616161"
+        android:textColorHint="#AEAEAE"
+        android:textSize="15.3sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/edit_text_email"
+        android:layout_alignParentStart="true" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/edit_text_password"
+        android:padding="14dp"
+        android:textColor="#616161"
+        android:textColorHint="#AEAEAE"
+        android:textSize="15.3sp"
+        android:layout_below="@+id/createAccount1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:id="@+id/createbutton"
+        android:layout_marginLeft="40dp"
+        android:layout_alignBaseline="@+id/loginbutton"
+        android:layout_alignBottom="@+id/loginbutton"
+        android:layout_alignEnd="@+id/createAccount1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with an exisiting maild ?"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/loginTV"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/Differentlogin"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:id="@+id/loginbutton"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/loginTV"
+        android:layout_toStartOf="@+id/createbutton" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Login with Existing Mailid"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:id="@+id/Differentlogin"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

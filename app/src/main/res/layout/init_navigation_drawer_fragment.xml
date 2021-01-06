@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:id="@+id/init_fragment_navigation_drawer_relative_layout">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/homePageFragment"
+        android:transitionName="testTransition"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:id="@+id/gridLayout">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/buylogo"
+                android:layout_margin="5dp"
+                android:text="search"
+                android:id="@+id/searchyourhomebutton"
+                android:layout_rowSpan="2"
+                android:layout_row="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:layout_column="0"
+                android:padding="20dp"
+                android:background="@color/colorPrimary"
+                android:transitionName="testTransition">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/selllogo"
+                android:layout_margin="5dp"
+                android:text="Rent"
+                android:gravity="center"
+                android:id="@+id/listyourhomebutton"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:padding="20dp"
+                android:background="@color/colorPrimary"
+                android:transitionName="testTransition"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/exchangelogo"
+                android:layout_margin="5dp"
+                android:text="About us"
+                android:id="@+id/myPageTile"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:layout_columnSpan="1"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:padding="20dp"
+                android:background="@color/colorPrimary" />
+
+        </GridLayout>
+
+        <link.fls.swipestack.SwipeStack
+            android:id="@+id/swipeStack"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:padding="32dp"
+            android:layout_below="@+id/gridLayout"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>

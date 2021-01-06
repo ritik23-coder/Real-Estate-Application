@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+        <shortcut
+            android:shortcutId="list"
+            android:enabled="true"
+            android:icon="@drawable/selllogo"
+            android:shortcutShortLabel="@string/compose_shortcut_short_label1"
+            android:shortcutLongLabel="@string/compose_shortcut_long_label1"
+            android:shortcutDisabledMessage="@string/compose_disabled_message1">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.SyracuseUniversity.jashwanthreddy.happynest"
+                android:targetClass="com.SyracuseUniversity.jashwanthreddy.happynest.ListYourHome"/>
+            <categories android:name="android.shortcut.conversation" />
+        </shortcut>
+    <shortcut
+        android:shortcutId="search"
+        android:enabled="true"
+        android:icon="@drawable/buylogo"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label2"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label2"
+        android:shortcutDisabledMessage="@string/compose_disabled_message2">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.SyracuseUniversity.jashwanthreddy.happynest"
+            android:targetClass="com.SyracuseUniversity.jashwanthreddy.happynest.SearchYourHome"/>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="aboutus"
+        android:enabled="true"
+        android:icon="@drawable/exchangelogo"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label3"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label3"
+        android:shortcutDisabledMessage="@string/compose_disabled_message3">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.SyracuseUniversity.jashwanthreddy.happynest"
+            android:targetClass="com.SyracuseUniversity.jashwanthreddy.happynest.AboutActivity"/>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <!-- Specify more shortcuts here. -->
+    </shortcuts>
+<!--
+    </PreferenceScreen>
+-->
+

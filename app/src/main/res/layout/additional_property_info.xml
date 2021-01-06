@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="580dp"
+    android:id="@+id/additional_property_info">
+
+    <TextView
+        android:id="@+id/propdescription"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/parkingcheckbox"
+        android:layout_alignStart="@+id/parkingcheckbox"
+        android:layout_below="@+id/parkingcheckbox"
+        android:layout_marginTop="11dp"
+        android:text="Property Description"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/propertyamenities"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/costedit"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Amenities"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bedrroomnumber"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/propertyamenities"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/propertyamenities"
+        android:layout_marginTop="29dp"
+        android:text="Number Of Bedrooms"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/propertycost"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/bedrroomnumber"
+        android:layout_alignStart="@+id/bedrroomnumber"
+        android:layout_below="@+id/bedrroomnumber"
+        android:layout_marginTop="19dp"
+        android:text="Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/noofbedroomsspinner"
+        android:layout_alignEnd="@+id/bedrroomnumber"
+        android:layout_alignRight="@+id/bedrroomnumber"
+        android:layout_alignTop="@+id/bedrroomnumber"></Spinner>
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:id="@+id/costedit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/propertycost"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp" />
+
+    <CheckBox
+        android:id="@+id/securitycheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/propertyamenities"
+        android:layout_alignStart="@+id/propertyamenities"
+        android:layout_below="@+id/propertyamenities"
+        android:layout_marginTop="17dp" />
+
+
+    <CheckBox
+        android:id="@+id/furnishmentcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/securitycheckbox"
+        android:layout_alignRight="@+id/securitycheckbox"
+        android:layout_below="@+id/securitycheckbox" />
+
+    <CheckBox
+        android:id="@+id/internetcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/furnishmentcheckbox"
+        android:layout_alignStart="@+id/furnishmentcheckbox"
+        android:layout_below="@+id/furnishmentcheckbox" />
+
+    <CheckBox
+        android:id="@+id/recreationcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/internetcheckbox"
+        android:layout_alignStart="@+id/internetcheckbox"
+        android:layout_below="@+id/internetcheckbox" />
+
+    <CheckBox
+        android:id="@+id/parkingcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recreationcheckbox"
+        android:layout_alignStart="@+id/recreationcheckbox"
+        android:layout_below="@+id/recreationcheckbox" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter manually or press on mike to speak"
+        android:layout_alignLeft="@+id/propdescription"
+        android:layout_alignStart="@+id/propdescription"
+        android:layout_below="@+id/propdescription"
+        android:id="@+id/enterdescriptiontextbox"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Continue"
+        android:id="@+id/continue_button_in_additionalinfofrag"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/enterdescriptiontextbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/securityhead"
+        android:text="Security"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/furnishmentcheckbox"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="Furnishment"
+        android:textSize="20dp"
+        android:id="@+id/furnishmenthead"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/securityhead"
+        android:layout_alignLeft="@+id/securityhead"
+        android:layout_alignStart="@+id/securityhead" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/internethead"
+        android:text="Internet"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/recreationcheckbox"
+        android:layout_alignLeft="@+id/furnishmenthead"
+        android:layout_alignStart="@+id/furnishmenthead" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/recreationhead"
+        android:text="Recreation Services"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/parkingcheckbox"
+        android:layout_alignLeft="@+id/internethead"
+        android:layout_alignStart="@+id/internethead" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/parkinghead"
+        android:text="Parking"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/propdescription"
+        android:layout_alignLeft="@+id/recreationhead"
+        android:layout_alignStart="@+id/recreationhead" />
+
+    <ImageButton
+        android:id="@+id/voiceTotextButton"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:src="@drawable/mic6"
+        android:layout_above="@+id/enterdescriptiontextbox"
+        android:layout_toEndOf="@+id/propdescription" />
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>

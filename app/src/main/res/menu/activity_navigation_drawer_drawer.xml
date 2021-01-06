@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/list_your_property"
+            android:icon="@drawable/renthomelogo"
+            android:title="List Your Home" />
+        <item
+            android:id="@+id/search_your_property"
+            android:icon="@drawable/buyhomelogo"
+            android:title="Search Your Home" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/aboutuslogo"
+            android:title="About Us" />
+        <item
+            android:id="@+id/logout_user"
+            android:icon="@drawable/logoutlogo"
+            android:title="Logout"/>
+    </group>
+</menu>
